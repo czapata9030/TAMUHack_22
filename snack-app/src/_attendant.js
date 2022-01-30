@@ -1,10 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import AAlogo from "./images/American-Airlines-Logo.png";
+import './userStyle.css';
 
 function Attendant() {
   return (
     <div className="App">
-      <h1>Attendant Page</h1>
+      <body class="flex-container">
+      <img src = {AAlogo} class = "logo"/>
+
+        <div class="row-container">
+        <a href="ontheway">
+            <button class= "option">Pillow</button>
+        </a>
+        <a href="ontheway">
+            <button class= "option">Blanket</button>
+        </a>
+        </div>
+
+        <div class="row-container">
+        <a href="ontheway">
+            <button class = "option">Headphones</button>
+        </a>
+        <a href="ontheway">
+            <button class = "option">Question</button>
+        </a>
+        </div>
+        <a href="/">
+            <button class = "big">Return to Main Menu</button>
+        </a>
+
+      </body>
     </div>
   );
 }

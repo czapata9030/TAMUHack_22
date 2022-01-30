@@ -6,6 +6,7 @@ import Water from "./images/Water.jpg"
 import Coke from "./images/Coke.jpg"
 import CanDry from "./images/Canada_Dry.jpg"
 
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import './menustyle.css';
 
 function Menu() {
@@ -22,9 +23,12 @@ function Menu() {
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+            
             <ul class="navbar__menu">
+              <Link to="/">
                 <li class="navbar__btn">
-                    <a href="/index.html" class="button"> HOME </a></li>
+                    <a class="button"> HOME </a></li>
+              </Link>
             </ul>
         </div>
     </nav>
@@ -103,7 +107,10 @@ function Menu() {
                     </div>
                 </div>
             </div>
-
+            <Link to="/ontheway">
+                <li class="navbar__btn">
+                    <a class="button"> Submit </a></li>
+              </Link>
         </div>
     </div>
 
