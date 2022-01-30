@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <link rel = "stylesheet" href="style.css">
+    <img src = "img/American-Airlines-Logo.png"
+    width = 600px
+    height = 118px>
+    <br>
+    <body>
+        <script>
+            var count = 1;
+            function setColor(btn, color) {
+                var property = document.getElementById(btn);
+                if (count == 0) {
+                    property.style.backgroundColor = "#FF0000";
+                    property.value = "Occupied"
+                    count = 1;        
+                }
+                else {
+                    property.style.backgroundColor = "#7FFF00";
+                    property.value = "Available"
+                    count = 0;
+                }
+            }
+        </script>
+            </head>
+            
+            <body>
+            
+            <input type="button" id="button" value = "Occupied" style= "height:200px; width:600px; color: white; background-color: #FF0000; border-radius: 10px; " onclick="setColor('button', '#101010')" />
+            
+            </body>
+            <br>
+            <p>Number of people currently in the queue</p>
+            <div="container">            
+                <!-- adding button and heading to show the digits -->
+                <!--increment() and decrement() functions on button click-->
+                    <h2 id="counting"></h2>
+                  <button onclick="increment()">+</button>  
+
+                  <button onclick="decrement()">-</button>         
+              </div>
+              <script>
+                //initialising a variable name data
+                var data = 0;
+      
+                //printing default value of data that is 0 in h2 tag
+                document.getElementById("counting").innerText = data;
+      
+                //creation of increment function
+                function increment() {
+                    data = data + 1;
+                    document.getElementById("counting").innerText = data;
+                }
+                //creation of decrement function
+                function decrement() {
+                    data = data - 1;
+                    document.getElementById("counting").innerText = data;
+                }
+            </script>
+            <br>
+        <a href="index.html">
+            <button class = "big">Return to Main Menu</button>
+        </a>
+    </body>
+
+
+
+</html>
